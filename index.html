@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Stream Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Sidebar for Dashboard Navigation -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <!-- Logo with white background and "Surveillance" text -->
+      <div class="logo-container">
+        <p class="surveillance-text"> Campus Drone Surveillance</p>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#"><i class="fas fa-video"></i> Live Streaming</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Dashboard Content -->
+  <main class="dashboard">
+    <header class="dashboard-header">
+      <img src="images/logo.png" alt="Company Logo" class="header-logo">
+      <div class="user-info">
+        <span>Welcome, User</span>
+      </div>
+    </header>
+
+    <section class="dashboard-content">
+      <div class="live-stream-section">
+        <h2>Live Stream</h2>
+        <!-- MJPEG Stream using img tag -->
+        <img id="liveStream" src="http://192.168.0.138:7123/stream.mjpg" alt="Live Stream" />
+      </div>
+    </section>
+  </main>
+</body>
+</html>
